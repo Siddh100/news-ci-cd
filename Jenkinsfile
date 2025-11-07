@@ -11,7 +11,7 @@ pipeline {
         stage('Setup Environment') {
     steps {
         bat """
-        SET PATH=C:\Users\pc\AppData\Local\Programs\Python\Python313\
+        SET PATH=C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python313\\;%PATH%
         python -m venv venv
         call venv\\Scripts\\activate
         pip install --upgrade pip
